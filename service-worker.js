@@ -6,13 +6,31 @@ const precache = [
   './js/register-sw.js',
   './index.html',
   './anime.html',
+  './offline.html',
   './css/estilo.css',
   './css/bootstrap.min.css',
   './css/bootstrap.min.css.map',
   './js/jquery.slim.min.js',
   './js/animania.js',
   './js/bootstrap.bundle.min.js',
-  './offline.html'
+  './res/fonts/SuisseIntl-Bold.eot',
+  './res/fonts/SuisseIntl-Bold.eot?#iefix',
+  './res/fonts/SuisseIntl-Bold.woff2',
+  './res/fonts/SuisseIntl-Bold.woff',
+  './res/fonts/SuisseIntl-Bold.ttf',
+  './res/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold',
+  './res/fonts/SuisseIntl-Medium.eot',
+  './res/fonts/SuisseIntl-Medium.eot?#iefix',
+  './res/fonts/SuisseIntl-Medium.woff2',
+  './res/fonts/SuisseIntl-Medium.woff',
+  './res/fonts/SuisseIntl-Medium.ttf',
+  './res/fonts/SuisseIntl-Medium.svg#SuisseIntl-Medium',
+  './res/fonts/SuisseIntl-Regular.eot',
+  './res/fonts/SuisseIntl-Regular.eot?#iefix',
+  './res/fonts/SuisseIntl-Regular.woff2',
+  './res/fonts/SuisseIntl-Regular.woff',
+  './res/fonts/SuisseIntl-Regular.ttf',
+  './res/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular'
 
 ];
 
