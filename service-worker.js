@@ -8,6 +8,7 @@ const precache = [
   './anime.html',
   './css/estilo.css',
   './css/bootstrap.min.css',
+  './css/bootstrap.min.css.map',
   './js/jquery.slim.min.js',
   './js/animania.js',
   './js/bootstrap.bundle.min.js',
