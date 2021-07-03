@@ -1,4 +1,4 @@
-window.addEventListener("load",paginaCargada);
+window.addEventListener("load", paginaCargada);
 
 function paginaCargada(){
 	// DOM para la búsqueda
@@ -7,12 +7,12 @@ function paginaCargada(){
 	console.log(formulario);
 }
 function buscar(evento){
-    console.log(evento);
+    //console.log(evento);
     evento.preventDefault();
     // guardamos la 
     const form = new FormData(this);
     const busqueda = form.get("input");
-    console.log(busqueda);
+    //console.log(busqueda);
     const url = "https://api.jikan.moe/v3";
 
     fetch(`${url}/search/anime?q=${busqueda}&page=1`)
@@ -27,8 +27,8 @@ function buscar(evento){
      console.log(resultadoDeBusqueda);
  	//Datos a mostrar: 
     resultadoDeBusqueda.innerHTML = info.results
-    .map(anime=>{
-        return `
+    .map(anime=>
+         `
             <section class="card col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center card-body my-3">
                         <img src="${anime.image_url}" class="card-img-top img-fluid" alt="anime">    
                         <h5 class="card-title mt-3">${anime.title}</h5>
@@ -37,7 +37,7 @@ function buscar(evento){
                         <a href="${anime.url}" class="btn btn-primary bg2" target="_blank">Link a la página</a>
             </section>
             `
-    }).join("\n");
+    ).join("\n");
     
 }
 
