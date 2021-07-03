@@ -27,8 +27,8 @@ function buscar(evento){
      console.log(resultadoDeBusqueda);
  	//Datos a mostrar: 
     resultadoDeBusqueda.innerHTML = info.results
-    .map(anime=>
-         `
+    .map(anime=>{
+        return `
             <section class="card col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center card-body my-3">
                         <img src="${anime.image_url}" class="card-img-top img-fluid" alt="anime">    
                         <h5 class="card-title mt-3">${anime.title}</h5>
@@ -37,7 +37,7 @@ function buscar(evento){
                         <a href="${anime.url}" class="btn btn-primary bg2" target="_blank">Link a la página</a>
             </section>
             `
-    ).join("\n");
+    }).join("\n");
     
 }
 
